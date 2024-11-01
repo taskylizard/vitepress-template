@@ -1,0 +1,42 @@
+{
+  "$schema": "./node_modules/@lunariajs/core/config.schema.json",
+  "repository": {
+    "name": "taskylizard/vitepress-template",
+    "branch": "main",
+    "hosting": "github"
+  },
+  "files": [
+    {
+      "location": "docs/**/*.md",
+      "pattern": "docs/@lang/@path",
+      "type": "universal"
+    }
+  ],
+  "defaultLocale": {
+    "label": "English",
+    "lang": "en"
+  },
+  "locales": [],
+  "outDir": "docs/.vitepress/dist/_translations",
+  "dashboard": {
+    "customCss": [
+      "./lunaria/styles.css"
+    ],
+    "ui": {
+      "statusByLocale.heading": "Translation progress by locale",
+      "statusByLocale.incompleteLocalizationLink": "incomplete translation",
+      "statusByLocale.outdatedLocalizationLink": "outdated translation",
+      "statusByLocale.completeLocalization": "This translation is complete, amazing job! 🎉",
+      "statusByFile.heading": "Translation status by file"
+    }
+  },
+  "ignoreKeywords": [
+    "lunaria-ignore",
+    "typo",
+    "en-only",
+    "broken link",
+    "i18nReady",
+    "i18nIgnore"
+  ],
+  "renderer": "./lunaria/renderer.config.ts"
+}
