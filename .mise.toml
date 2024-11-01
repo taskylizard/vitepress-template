@@ -1,0 +1,5 @@
+[tools]
+node = "latest"
+typos = "latest"
+"ubi:lycheeverse/lychee" = "latest"
+act = "latest"
